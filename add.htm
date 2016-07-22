@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+REGISTER NEW USER
+</title>
+</head>
+<style>
+button
+{background-color:black; 
+color:rgb(178,204,51);
+}
+body
+{
+background-image:url(sharegp.jpg);
+background-repeat: no-repeat;
+background-position:center;
+background-color:rgb:black;
+background-size:cover;
+font-family:sylfaen;
+font-size:25px;
+color:black;
+}
+input
+{
+font-family:sylfaen;
+font-size:25px;
+color:black;
+}
+</style>
+<body>
+<br>
+<center>
+<form action="add_action.php" method="post" enctype="multipart/form-data">
+<fieldset style="background-color:rgba(255,102,51,0.4);width:600px;">
+<legend style="font-size:40px;background-color:black; color:rgb(178,204,51);"><u>SIGN UP</u></legend>
+Name:
+<br>
+<input  type="text" name="Name" pattern="[A-Za-z .]*" required>
+<br>
+<br>
+Email Id:
+<br>
+<input type="email" name="Email" required>
+<br>
+<br>
+Username
+<br>
+<input name="Username"  pattern="[A-Za-z0-9]*" type="text" required>
+<br>
+<br>
+Password:
+<br>
+<input  type="password" name="Password" required>
+<br>
+<br>
+Profile Picture:
+<br>
+<input type="file" name="UploadPhoto" id="UploadPhoto" required>
+<br>
+<br>
+<input type="submit"  value="Register">
+<br>
+</fieldset>
+</form>
+</center>
+</body>
+</html>
